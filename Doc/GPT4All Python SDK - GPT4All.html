@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://docs.gpt4all.io/gpt4all_python/home.html -->
+<html lang="en" class="js-focus-visible js" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+      
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="GPT4All Docs - run LLMs efficiently on your hardware">
+      
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://docs.gpt4all.io/assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        
+      
+    
+    
+      <link rel="stylesheet" href="./GPT4All Python SDK - GPT4All_files/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="./GPT4All Python SDK - GPT4All_files/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link rel="stylesheet" href="./GPT4All Python SDK - GPT4All_files/css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="./GPT4All Python SDK - GPT4All_files/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="./GPT4All Python SDK - GPT4All_files/custom.css">
+    
+    
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NPXC8BYHJV"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NPXC8BYHJV",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NPXC8BYHJV",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        
+      
+        <meta property="og:description" content="GPT4All Docs - run LLMs efficiently on your hardware">
+      
+        
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        
+      
+        <meta name="twitter:description" content="GPT4All Docs - run LLMs efficiently on your hardware">
+      
+        
+      
+    
+    
+  <link rel="canonical" href="https://docs.gpt4all.io/gpt4all_python/home.html"><link rel="prev" href="https://docs.gpt4all.io/gpt4all_desktop/cookbook/use-local-ai-models-to-privately-chat-with-One-Drive.html"><link rel="next" href="https://docs.gpt4all.io/gpt4all_python/monitoring.html"><title>GPT4All Python SDK - GPT4All</title><script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><meta property="og:title" content="GPT4All Python SDK - GPT4All"><meta property="og:image" content="https://docs.gpt4all.io/assets/images/social/gpt4all_python/home.png"><meta property="og:url" content="https://docs.gpt4all.io/gpt4all_python/home.html"><meta name="twitter:title" content="GPT4All Python SDK - GPT4All"><meta name="twitter:image" content="https://docs.gpt4all.io/assets/images/social/gpt4all_python/home.png"></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="https://docs.gpt4all.io/gpt4all_python/home.html#gpt4all-python-sdk" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://docs.gpt4all.io/index.html" title="GPT4All" class="md-header__button md-logo" aria-label="GPT4All" data-md-component="logo">
+      
+  <img src="./GPT4All Python SDK - GPT4All_files/nomic.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT4All
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GPT4All Python SDK
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">Type to start searching</div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nomic-ai/gpt4all" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository md-source__repository--active">
+    nomic-ai/gpt4all
+  <ul class="md-source__facts"><li class="md-source__fact md-source__fact--version">v3.2.1</li><li class="md-source__fact md-source__fact--stars">69k</li><li class="md-source__fact md-source__fact--forks">7.6k</li></ul></div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" style="top: 53px;">
+                <div class="md-sidebar__scrollwrap" style="height: 815px;">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://docs.gpt4all.io/index.html" title="GPT4All" class="md-nav__button md-logo" aria-label="GPT4All" data-md-component="logo">
+      
+  <img src="./GPT4All Python SDK - GPT4All_files/nomic.png" alt="logo">
+
+    </a>
+    GPT4All
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nomic-ai/gpt4all" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    nomic-ai/gpt4all
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPT4All Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/quickstart.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/chats.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/models.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/localdocs.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LocalDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/settings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Cookbook
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Cookbook
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/cookbook/use-local-ai-models-to-privately-chat-with-google-drive.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local AI Chat with your Google Drive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/cookbook/use-local-ai-models-to-privately-chat-with-Obsidian.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local AI Chat with your Obsidian Vault
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_desktop/cookbook/use-local-ai-models-to-privately-chat-with-One-Drive.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local AI Chat with your OneDrive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Python SDK
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GPT4All Python SDK
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="https://docs.gpt4all.io/gpt4all_python/home.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    GPT4All Python SDK
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#load-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load LLM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#chat-session-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat Session Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#direct-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_python/monitoring.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_python/ref.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDK Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9">
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Help
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Help
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_help/faq.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.gpt4all.io/gpt4all_help/troubleshooting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" style="top: 53px;">
+                <div class="md-sidebar__scrollwrap" style="height: 815px;">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#load-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load LLM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#chat-session-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat Session Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#direct-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://docs.gpt4all.io/gpt4all_python/home.html#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="gpt4all-python-sdk">GPT4All Python SDK</h1>
+<h2 id="installation">Installation</h2>
+<p>To get started, pip-install the <code>gpt4all</code> package into your python environment.</p>
+<div class="highlight"><pre id="__code_10"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_10 &gt; code"></button><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>gpt4all
+</code></pre></div>
+<p>We recommend installing <code>gpt4all</code> into its own virtual environment using <code>venv</code> or <code>conda</code></p>
+<h2 id="load-llm">Load LLM</h2>
+<p>Models are loaded by name via the <code>GPT4All</code> class. If it's your first time loading a model, it will be downloaded to your device and saved so it can be quickly reloaded next time you create a <code>GPT4All</code> model with the same name.</p>
+<div class="admonition note">
+<p class="admonition-title">Load LLM</p>
+<div class="highlight"><pre id="__code_11"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_11 &gt; code"></button><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">gpt4all</span> <span class="kn">import</span> <span class="n">GPT4All</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-1-2"></a><span class="n">model</span> <span class="o">=</span> <span class="n">GPT4All</span><span class="p">(</span><span class="s2">"Meta-Llama-3-8B-Instruct.Q4_0.gguf"</span><span class="p">)</span> <span class="c1"># downloads / loads a 4.66GB LLM</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-1-3"></a><span class="k">with</span> <span class="n">model</span><span class="o">.</span><span class="n">chat_session</span><span class="p">():</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s2">"How can I run LLMs efficiently on my laptop?"</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">1024</span><span class="p">))</span>
+</code></pre></div>
+</div>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th><code>GPT4All</code> model name</th>
+<th>Filesize</th>
+<th>RAM Required</th>
+<th>Parameters</th>
+<th>Quantization</th>
+<th>Developer</th>
+<th>License</th>
+<th>MD5 Sum (Unique Hash)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Meta-Llama-3-8B-Instruct.Q4_0.gguf</code></td>
+<td>4.66 GB</td>
+<td>8 GB</td>
+<td>8 Billion</td>
+<td>q4_0</td>
+<td>Meta</td>
+<td><a href="https://llama.meta.com/llama3/license/">Llama 3 License</a></td>
+<td>c87ad09e1e4c8f9c35a5fcef52b6f1c9</td>
+</tr>
+<tr>
+<td><code>Nous-Hermes-2-Mistral-7B-DPO.Q4_0.gguf</code></td>
+<td>4.11 GB</td>
+<td>8 GB</td>
+<td>7 Billion</td>
+<td>q4_0</td>
+<td>Mistral &amp; Nous Research</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></td>
+<td>Coa5f6b4eabd3992da4d7fb7f020f921eb</td>
+</tr>
+<tr>
+<td><code>Phi-3-mini-4k-instruct.Q4_0.gguf</code></td>
+<td>2.18 GB</td>
+<td>4 GB</td>
+<td>3.8 billion</td>
+<td>q4_0</td>
+<td>Microsoft</td>
+<td><a href="https://opensource.org/license/mit">MIT</a></td>
+<td>f8347badde9bfc2efbe89124d78ddaf5</td>
+</tr>
+<tr>
+<td><code>orca-mini-3b-gguf2-q4_0.gguf</code></td>
+<td>1.98 GB</td>
+<td>4 GB</td>
+<td>3 billion</td>
+<td>q4_0</td>
+<td>Microsoft</td>
+<td><a href="https://spdx.org/licenses/CC-BY-NC-SA-4.0">CC-BY-NC-SA-4.0</a></td>
+<td>0e769317b90ac30d6e09486d61fefa26</td>
+</tr>
+<tr>
+<td><code>gpt4all-13b-snoozy-q4_0.gguf</code></td>
+<td>7.37 GB</td>
+<td>16 GB</td>
+<td>13 billion</td>
+<td>q4_0</td>
+<td>Nomic AI</td>
+<td><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL</a></td>
+<td>40388eb2f8d16bb5d08c96fdfaac6b2c</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2 id="chat-session-generation">Chat Session Generation</h2>
+<p>Most of the language models you will be able to access from HuggingFace have been trained as assistants. This guides language models to not just answer with relevant text, but <em>helpful</em> text.</p>
+<p>If you want your LLM's responses to be helpful in the typical sense, we recommend you apply the chat templates the models were finetuned with. Information about specific prompt templates is typically available on the official HuggingFace page for the model.</p>
+<div class="admonition note">
+<p class="admonition-title">Example LLM Chat Session Generation</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2" style="--md-indicator-x: 0px; --md-indicator-width: 68px;"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels tabbed-labels--linked"><label for="__tabbed_1_1"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_1_1" tabindex="-1">Code</a></label><label for="__tabbed_1_2"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_1_2" tabindex="-1">Output</a></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Load <code>Llama 3</code> and enter the following prompt in a chat session:</p>
+<div class="highlight"><pre id="__code_12"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_12 &gt; code"></button><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">gpt4all</span> <span class="kn">import</span> <span class="n">GPT4All</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-2-2"></a><span class="n">model</span> <span class="o">=</span> <span class="n">GPT4All</span><span class="p">(</span><span class="s2">"Meta-Llama-3-8B-Instruct.Q4_0.gguf"</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-2-3"></a><span class="k">with</span> <span class="n">model</span><span class="o">.</span><span class="n">chat_session</span><span class="p">():</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s2">"quadratic formula"</span><span class="p">))</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>With the default sampling settings, you should see something resembling the following:
+</p><div class="highlight"><pre id="__code_13"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_13 &gt; code"></button><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-1"></a>The quadratic formula!
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-3"></a>The quadratic formula is a mathematical formula that provides the solutions to a quadratic equation of the form:
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-5"></a>ax^2 + bx + c = 0
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-7"></a>where a, b, and c are constants. The formula is:
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-9"></a>x = (-b ± √(b^2 - 4ac)) / 2a
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-11"></a>Let's break it down:
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-13"></a>* x is the variable we're trying to solve for.
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-14"></a>* a, b, and c are the coefficients of the quadratic equation.
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-15"></a>* ± means "plus or minus".
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-16"></a>* √ denotes the square root.
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-18"></a>To use the formula, simply plug in the values of a, b, and c into the expression above. The resulting value(s) will be the solutions to the original quadratic equation!
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-19"></a>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-20"></a>For example, let's say we have the quadratic equation:
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-22"></a>x^2 + 5x + 6 = 0
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-23"></a>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-24"></a>We can plug these values into the formula as follows:
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-25"></a>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-26"></a>a = 1
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-3-27"></a>b = 5
+</code></pre></div><p></p>
+</div>
+</div>
+<div class="tabbed-control tabbed-control--prev" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div><div class="tabbed-control tabbed-control--next" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div></div>
+</div>
+<h2 id="direct-generation">Direct Generation</h2>
+<p>Directly calling <code>model.generate()</code> prompts the model without applying any templates. </p>
+<p>Note: this can result in responses that are less like helpful responses and more like mirroring the tone of your prompt. In general, a language model outside of a chat session is less of a helpful assistant and more of a lens into the distribution of the model's training data.</p>
+<p>As an example, see how the model's response changes when we give the same prompt as above without applying a chat session:</p>
+<div class="admonition note">
+<p class="admonition-title">Example LLM Direct Generation</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2" style="--md-indicator-x: 0px; --md-indicator-width: 68px;"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels tabbed-labels--linked"><label for="__tabbed_2_1"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_2_1" tabindex="-1">Code</a></label><label for="__tabbed_2_2"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_2_2" tabindex="-1">Output</a></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Load <code>Llama 3</code> and enter the following prompt:</p>
+<div class="highlight"><pre id="__code_14"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_14 &gt; code"></button><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">gpt4all</span> <span class="kn">import</span> <span class="n">GPT4All</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-4-2"></a><span class="n">model</span> <span class="o">=</span> <span class="n">GPT4All</span><span class="p">(</span><span class="s2">"Meta-Llama-3-8B-Instruct.Q4_0.gguf"</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s2">"quadratic formula"</span><span class="p">))</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>With the default sampling settings, you should see something resembling the following:
+</p><div class="highlight"><pre id="__code_15"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_15 &gt; code"></button><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-1"></a>. The equation is in the form of a + bx = c, where a and b are constants.
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-2"></a>The solution to this problem involves using the quadratic formula which states that for any quadratic equation ax^2+bx+c=0, its solutions can be found by:
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-3"></a>x = (-b ± √(b^2-4ac)) / 2a
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-4"></a>In your case, since you have a + bx = c, we need to rewrite it in the form of ax^2+bx+c=0. To do this, subtract both sides from c, so that:
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-5"></a>c - (a + bx) = 0
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-6"></a>Now, combine like terms on the left side and simplify:
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-7"></a>ax^2 + (-b)x + (c-a) = 0\n\nSo now we have a quadratic equation in standard form: ax^2+bx+c=0. We can use this to find its solutions using the quadratic formula:
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-5-9"></a>x = ((-b ± √((-b)^2
+</code></pre></div><p></p>
+</div>
+</div>
+<div class="tabbed-control tabbed-control--prev" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div><div class="tabbed-control tabbed-control--next" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div></div>
+</div>
+<p>Why did it respond differently? Because language models, before being fine-tuned as assistants, are trained to be more like a data mimic than a helpful assistant. Therefore our responses ends up more like a typical continuation of math-style text rather than a helpful answer in dialog. </p>
+<h2 id="embeddings">Embeddings</h2>
+<p>Nomic trains and open-sources free embedding models that will run very fast on your hardware.</p>
+<p>The easiest way to run the text embedding model locally uses the <a href="https://github.com/nomic-ai/nomic"><code>nomic</code></a> python library to interface with our fast <a href="https://docs.gpt4all.io/gpt4all_python/ref.html#gpt4all.gpt4all.Embed4All">C/C++ implementations</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Example Embeddings Generation</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2" style="--md-indicator-x: 0px; --md-indicator-width: 68px;"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels tabbed-labels--linked"><label for="__tabbed_3_1"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_3_1" tabindex="-1">Code</a></label><label for="__tabbed_3_2"><a href="https://docs.gpt4all.io/gpt4all_python/home.html#__tabbed_3_2" tabindex="-1">Output</a></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Importing <code>embed</code> from the <a href="https://github.com/nomic-ai/nomic"><code>nomic</code></a> library, you can call <code>embed.text()</code> with <code>inference_mode="local"</code>. This downloads an embedding model and saves it for later.</p>
+<div class="highlight"><pre id="__code_16"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_16 &gt; code"></button><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">nomic</span> <span class="kn">import</span> <span class="n">embed</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-6-2"></a><span class="n">embeddings</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">text</span><span class="p">([</span><span class="s2">"String 1"</span><span class="p">,</span> <span class="s2">"String 2"</span><span class="p">],</span> <span class="n">inference_mode</span><span class="o">=</span><span class="s2">"local"</span><span class="p">)[</span><span class="s1">'embeddings'</span><span class="p">]</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Number of embeddings created:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">embeddings</span><span class="p">))</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Number of dimensions per embedding:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">embeddings</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre id="__code_17"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_17 &gt; code"></button><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-7-1"></a>Number of embeddings created: 2
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="https://docs.gpt4all.io/gpt4all_python/home.html#__codelineno-7-2"></a>Number of dimensions per embedding: 768
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-control tabbed-control--prev" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div><div class="tabbed-control tabbed-control--next" hidden=""><button class="tabbed-button" tabindex="-1" aria-hidden="true"></button></div></div>
+</div>
+<p>
+</p><figure><img src="./GPT4All Python SDK - GPT4All_files/local_embed.gif"><figcaption>Nomic embed text local inference</figcaption>
+</figure>
+<p></p>
+<p>To learn more about making embeddings locally with <code>nomic</code>, visit our <a href="https://docs.nomic.ai/atlas/guides/embeddings#local-inference">embeddings guide</a>.</p>
+<p>The following embedding models can be used within the application and with the <code>Embed4All</code> class from the <code>gpt4all</code> Python library. The default context length as GGUF files is 2048 but can be <a href="https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF#description">extended</a>.</p>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Using with <code>nomic</code></th>
+<th><code>Embed4All</code> model name</th>
+<th style="text-align: right;">Context Length</th>
+<th style="text-align: right;"># Embedding Dimensions</th>
+<th style="text-align: right;">File Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/nomic-ai/nomic-embed-text-v1-GGUF">Nomic Embed v1</a></td>
+<td><code>embed.text(strings, model="nomic-embed-text-v1", inference_mode="local")</code></td>
+<td><code>Embed4All("nomic-embed-text-v1.f16.gguf")</code></td>
+<td style="text-align: right;">2048</td>
+<td style="text-align: right;">768</td>
+<td style="text-align: right;">262 MiB</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF">Nomic Embed v1.5</a></td>
+<td><code>embed.text(strings, model="nomic-embed-text-v1.5", inference_mode="local")</code></td>
+<td><code>Embed4All("nomic-embed-text-v1.5.f16.gguf")</code></td>
+<td style="text-align: right;">2048</td>
+<td style="text-align: right;">64-768</td>
+<td style="text-align: right;">262 MiB</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2">SBert</a></td>
+<td>n/a</td>
+<td><code>Embed4All("all-MiniLM-L6-v2.gguf2.f16.gguf")</code></td>
+<td style="text-align: right;">512</td>
+<td style="text-align: right;">384</td>
+<td style="text-align: right;">44 MiB</td>
+</tr>
+</tbody>
+</table></div></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 Nomic, Inc
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.sections"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="./GPT4All Python SDK - GPT4All_files/bundle.56dfad97.min.js.download"></script>
+      
+    
+  <script defer="" src="./GPT4All Python SDK - GPT4All_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8c11f0c8484a8dcf&quot;,&quot;version&quot;:&quot;2024.8.0&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true}},&quot;token&quot;:&quot;9d54bc6d581142b6aceaafc639be4f15&quot;,&quot;b&quot;:1}" crossorigin="anonymous"></script>
+
+</body></html>
